@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #141214;
+}
+
+/* Menú fijo */
+header {
+    background-color: #444;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 50px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Submenú desplegable */
+.submenu {
+    position: relative;
+}
+
+.submenu .dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    flex-direction: row;
+    overflow: visible; /* Evita que se corte */
+    white-space: nowrap; /* Evita que los elementos se desborden */
+    z-index: 999; /* Se asegura de que esté por encima de otros elementos */
+}
+
+.submenu:hover .dropdown {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Asegura que los elementos no se corten */
+}
+
+.dropdown li {
+    text-align: center;
+    padding: 5px;
+}
+
+.dropdown img {
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+/* Contenido principal */
+main {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* Diseño de recuadros */
+.contenido {
+    text-align: center;
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.recuadros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.recuadro {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.recuadro img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #444;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
