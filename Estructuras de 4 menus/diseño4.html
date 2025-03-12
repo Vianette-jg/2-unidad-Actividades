@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño 4</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleFooter() {
+            document.querySelector(".footer-content").classList.toggle("footer-expanded");
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container layout4">
+        <div class="header">
+            <div class="navbar">
+                <a href="#">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Equipo</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left">Sección Izquierda</div>
+            <div class="right">Sección Derecha</div>
+        </div>
+        <div class="footer-toggle" onclick="toggleFooter()"></div>
+        <div class="footer-content">
+            <div class="footer">
+                <div class="footer-box">Caja 1</div>
+                <div class="footer-box">Caja 2</div>
+                <div class="footer-box">Caja 3</div>
+                
+                <div class="footer-box">Caja 4</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
